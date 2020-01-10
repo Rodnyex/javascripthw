@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
+};
 ​
 html,
 body,
@@ -10,25 +10,25 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-}
+};
 ​
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
-}
+};
 ​
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-}
+};
 ​
 .header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
-}
+};
 ​
 .card {
   background-color: hsl(0, 0%, 100%);
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
-}
+};
 ​
 .card-header::after {
   content: " ";
@@ -48,11 +48,11 @@ body {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-}
+};
 ​
 .card-body {
   min-height: 100px;
-}
+};
 ​
 .card-footer::before {
   content: " ";
@@ -60,13 +60,13 @@ body {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-}
+};
 ​
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
-}
+};
 ​
 .btn {
   border: none;
@@ -82,16 +82,16 @@ body {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-}
+};
 ​
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
-}
+};
 ​
 .float-right {
   float: right;
-}
+};
 ​
 #password {
   -webkit-appearance: none;
@@ -120,20 +120,17 @@ button[disabled] {
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-}
+};
+
 ​
-  #password {
+  .password {
     font-size: 1rem;
-  }
-}
+  };
+
 ​
 @media (min-width: 500px) {
   .btn {
     font-size: 0.8rem;
   }
-}
-
-
-
-
+};
 

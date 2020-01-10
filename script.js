@@ -2,22 +2,32 @@
 var generateBtn = document.querySelector("#generate");
 
 
+
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+function GeneratePassword() {
+  var length= 10;
+  var passwordset = "abcdefghijklmnopqrstuvwxyz0123456789";
 
-  passwordText.value = password;
+  for (var i = 0, n = passwordset.length; i < length; ++i) {
+    retVal += passwordset.charAt(Math.floor(Math.random() * 10));
+    
+    var password = event.password.toLowercase();
 
-  copyBtn.removeAttribute("disabled");
-  copyBtn.focus();
+
+  passwordText.value = password;
+
+  copyBtn.removeAttribute("disabled");
+  copyBtn.focus();
 }
 
-function copyToClipboard() {
-  // BONUS 
+function copyToClipboard(event) {
+  // BONUS 
+  event.preventDefault();
+  var 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
-// BONUS EVENT LISTENER
+// BONUS EVENT LISTENER
+closeEl.addEventListener("click", close);
