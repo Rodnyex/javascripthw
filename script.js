@@ -9,7 +9,6 @@ function GeneratePassword() {
   var length= 8;
   var passwordset = "abcdefghijklmnopqrstuvwxyz0123456789";
   var numbers = random.randint(0, 9);
-  var chooser = 
 
   for (var i = 0, n = passwordset.length; i < length; ++i) {
     retVal += passwordset.charAt(Math.floor(Math.random() * 10));
@@ -22,9 +21,7 @@ function GeneratePassword() {
   copyBtn.focus();
 }
 
-function copyToClipboard(event) {
-  // BONUS 
-  event.preventDefault();
+document.getElementByClassName("password").value = password
  
 }
 
